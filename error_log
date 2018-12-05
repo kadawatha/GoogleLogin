@@ -1,0 +1,21 @@
+[29-Nov-2018 06:08:03 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/admoohos/public_html/GoogleLogin/config.php:32) in /home/admoohos/public_html/GoogleLogin/g-callback.php on line 24
+[29-Nov-2018 06:08:06 America/New_York] PHP Fatal error:  Uncaught exception 'Google_Service_Exception' with message '{
+  "error": {
+    "code": 401,
+    "message": "Request is missing required authentication credential. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+    "errors": [
+      {
+        "message": "Request is missing required authentication credential. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.",
+        "domain": "global",
+        "reason": "unauthorized"
+      }
+    ],
+    "status": "UNAUTHENTICATED"
+  }
+}
+' in /home/admoohos/public_html/GoogleLogin/GoogleAPI/src/Google/Http/REST.php:118
+Stack trace:
+#0 /home/admoohos/public_html/GoogleLogin/GoogleAPI/src/Google/Http/REST.php(94): Google_Http_REST::decodeHttpResponse(Object(GuzzleHttp\Psr7\Response), Object(GuzzleHttp\Psr7\Request), 'Google_Service_...')
+#1 [internal funct in /home/admoohos/public_html/GoogleLogin/GoogleAPI/src/Google/Http/REST.php on line 118
+[04-Dec-2018 04:49:21 America/New_York] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'dhanuska_db'@'localhost' (using password: YES) in /home/admoohos/public_html/GoogleLogin/login.php on line 19
+[04-Dec-2018 04:49:21 America/New_York] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/admoohos/public_html/GoogleLogin/login.php on line 20
